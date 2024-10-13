@@ -161,6 +161,7 @@ section {
 .strategy-list {
   display: flex;
   justify-content: center;
+  gap: 24px;
 }
 
 .strategy-list-title {
