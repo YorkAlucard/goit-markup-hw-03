@@ -29,10 +29,13 @@ li {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1158px;
-  padding-left: 156px;
-  padding-right: 156px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -48,9 +51,7 @@ section {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px inside #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigat {
@@ -79,6 +80,10 @@ section {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.header-menu-item {
+  padding: 24px 0;
 }
 
 .header-menu-link {
@@ -116,6 +121,7 @@ section {
 
 .head-site {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .page-title {
@@ -125,7 +131,7 @@ section {
   letter-spacing: 0.02em;
   color: #ffffff;
   padding-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
   display: block;
   margin: 0 auto;
 }
@@ -140,7 +146,10 @@ section {
   color: #ffffff;
   cursor: pointer;
   padding: 16px 32px;
+  border: none;
   border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
   display: block;
   margin: 0 auto;
 }
@@ -205,11 +214,12 @@ section {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -218,7 +228,7 @@ section {
 }
 
 .team-list-container {
-  padding: 32px 16px;
+  padding: 32px;
   text-align: center;
 }
 
@@ -246,12 +256,16 @@ section {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list-container {
   padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list {
@@ -273,7 +287,7 @@ section {
 /* --------------------_FOOOOOTEEERR-------------------------------- */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 156px;
+  padding: 100px 0;
 }
 
 .footer-navigat-logo {
@@ -284,6 +298,8 @@ section {
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
